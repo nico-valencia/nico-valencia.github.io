@@ -5,56 +5,257 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nico Valencia - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <header>
         <nav>
-            <h1>Nico Valencia</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <h1 class="logo">NICO VALENCIA</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#contact" class="contact-btn">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="hero">
-        <h2>Hi, I'm Nico</h2>
-        <p>Web Developer | Designer | Creator</p>
+        <div class="hero-content">
+            <h2 class="hero-title">Building the Future,<br>One Line at a Time</h2>
+            <p class="hero-subtitle">Developer | Researcher | Problem Solver</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="arrow">↓</div>
+        </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a developer passionate about creating beautiful websites...</p>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Hi, I'm Nico Valencia, a passionate developer and researcher focused on creating innovative solutions.
+                    </p>
+                    <p>
+                        I specialize in web development, data analysis, and cutting-edge research. 
+                        With a strong foundation in modern technologies and a drive for continuous learning, 
+                        I bring ideas to life through clean, efficient code.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
+                        projects, and pushing the boundaries of what's possible.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item">HTML/CSS</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Git</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of your project</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of your project</p>
-                <a href="#">View Project</a>
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-number">01</div>
+                    <h3>Project Title One</h3>
+                    <p>A comprehensive web application built with modern technologies. Features include real-time data processing and intuitive user interface.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">API</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">02</div>
+                    <h3>Project Title Two</h3>
+                    <p>An innovative solution for data visualization and analytics. Clean design meets powerful functionality.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Data Science</span>
+                        <span class="tag">Visualization</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">03</div>
+                    <h3>Project Title Three</h3>
+                    <p>A responsive web platform designed for seamless user experience across all devices.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
             </div>
         </div>
     </section>
 
+    <!-- CV Section -->
+    <section id="cv">
+        <div class="container">
+            <h2 class="section-title">Curriculum Vitae</h2>
+            <div class="cv-content">
+                
+                <div class="cv-section">
+                    <h3>Education</h3>
+                    <div class="cv-item">
+                        <div class="cv-header">
+                            <h4>Your Degree</h4>
+                            <span class="cv-date">2020 - 2024</span>
+                        </div>
+                        <p class="cv-institution">University Name</p>
+                        <p>Relevant coursework, achievements, or honors</p>
+                    </div>
+                </div>
+
+                <div class="cv-section">
+                    <h3>Experience</h3>
+                    <div class="cv-item">
+                        <div class="cv-header">
+                            <h4>Position Title</h4>
+                            <span class="cv-date">2023 - Present</span>
+                        </div>
+                        <p class="cv-institution">Company/Organization Name</p>
+                        <p>Description of your role and key accomplishments</p>
+                    </div>
+                    <div class="cv-item">
+                        <div class="cv-header">
+                            <h4>Previous Position</h4>
+                            <span class="cv-date">2021 - 2023</span>
+                        </div>
+                        <p class="cv-institution">Company/Organization Name</p>
+                        <p>Description of your role and key accomplishments</p>
+                    </div>
+                </div>
+
+                <div class="cv-download">
+                    <a href="#" class="btn btn-primary">Download Full CV (PDF)</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research">
+        <div class="container">
+            <h2 class="section-title">Research</h2>
+            <div class="research-intro">
+                <p class="lead">
+                    My research focuses on [Your Research Area], exploring innovative approaches to [Your Focus].
+                </p>
+            </div>
+            
+            <div class="research-grid">
+                
+                <div class="research-card">
+                    <div class="research-type">Publication</div>
+                    <h3>Research Paper Title</h3>
+                    <p class="research-authors">Valencia, N., Co-Author, A. (2024)</p>
+                    <p>Brief description of your research paper and its key findings or contributions to the field.</p>
+                    <a href="#" class="research-link">Read Paper →</a>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-type">Project</div>
+                    <h3>Research Project Title</h3>
+                    <p class="research-authors">Ongoing Research | 2024</p>
+                    <p>Description of your current research project, methodology, and expected outcomes.</p>
+                    <a href="#" class="research-link">Learn More →</a>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-type">Conference</div>
+                    <h3>Conference Presentation</h3>
+                    <p class="research-authors">Conference Name | 2023</p>
+                    <p>Summary of your conference presentation and the insights shared with the academic community.</p>
+                    <a href="#" class="research-link">View Slides →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
-        <h2>Get In Touch</h2>
-        <p>Email: your.email@example.com</p>
-        <div class="social-links">
-            <a href="https://github.com/nico-valencia">GitHub</a>
-            <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p class="lead">
+                        Have a project in mind or want to collaborate? I'd love to hear from you.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h4>Email</h4>
+                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Location</h4>
+                            <p>Your City, Country</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/nico-valencia" class="social-link">
+                            <span>GitHub</span>
+                            <span class="arrow">→</span>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" class="social-link">
+                            <span>LinkedIn</span>
+                            <span class="arrow">→</span>
+                        </a>
+                        <a href="https://twitter.com/yourhandle" class="social-link">
+                            <span>Twitter</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Nico Valencia. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Nico Valencia</p>
+            <p>Designed & Built with passion</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
