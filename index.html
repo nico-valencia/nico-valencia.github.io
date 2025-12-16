@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nico Valencia - Portfolio</title>
+    <title>Nico Valencia - Geophysicist & Researcher</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +17,8 @@
             <div class="nav-container">
                 <h1 class="logo">NICO VALENCIA</h1>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#cv">CV</a></li>
                     <li><a href="#research">Research</a></li>
                     <li><a href="#contact" class="contact-btn">Contact</a></li>
                 </ul>
@@ -27,64 +26,43 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h2 class="hero-title">Building the Future,<br>One Line at a Time</h2>
-            <p class="hero-subtitle">Developer | Researcher | Problem Solver</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="arrow">↓</div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
+    <!-- Home/About Section -->
+    <section id="home">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="home-header">
+                <h1 class="page-title">Nico Valencia</h1>
+                <p class="subtitle">Geophysicist | Seismology Researcher | Data Scientist</p>
+            </div>
+
             <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">
-                        I am a recent graduate from Berkeley with a double major in Geophysics and Astrophysics. 
-                        I am interested in using techniques of geophysics, specifically observational and theoretical seismology, 
-                        to research the interior structure of Earth and other planets. I currently am a data science intern for SoundThinking, 
-                        where I am applying synthetic modeling and signal processing to support development of the SafePointe platform. 
-                    </p>
-                    <p>        
-                        For my senior thesis, I worked with Dr. Barbara Romanowicz and the Berkeley Global Seismology Group on constraining 
-                        shear wave splitting measurements for complex anisotropic media within the southwest Pacific. We showed that the incorporation 
-                        of high-quality direct S phases with SKS phases through azimuthal binning improves measurements of Splitting Intensity across 
-                        Australia and Indonesia. This novel Python workflow enables the measurement of receiver-side anisotropy for seismic stations 
-                        with limited source distributions. 
-                    </p>
-                    <p>
-                        During my REU Internship at Brown University with Karen Fischer, we used Ps receiver functions to measure the structure of the 
-                        Antarctic Ice Sheet. I developed MATLAB time-series analysis codes to better analyze temporal variations in ice properties, 
-                        and demonstrated via synthetic receiver functions that we can resolve changes in ice thickness down to 200m using seismic body waves. 
-                        We investigated heterogeneities in the ice and began development of a forward modeling scheme to optimize subsurface interpretation.
-                    </p>
-                    <p>
-                        I have presented my work at multiple conferences, and have developed a strong foundation in geophysical research. 
-                        I am currently looking for opportunities to continue my studies in seismology through doctoral programs starting Fall 2026. 
-                        Please feel free to reach out me regarding my work, future plans, or anything!
-                    </p>
-                </div>
-                <div class="skills">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-grid">
-                        <div class="skill-item">HTML/CSS</div>
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">React</div>
-                        <div class="skill-item">Node.js</div>
-                        <div class="skill-item">Git</div>
-                    </div>
-                </div>
+                <p>
+                    I am a recent graduate from Berkeley with a double major in Geophysics and Astrophysics. 
+                    I am interested in using techniques of geophysics, specifically observational and theoretical seismology, 
+                    to research the interior structure of Earth and other planets. I currently am a data science intern for SoundThinking, 
+                    where I am applying synthetic modeling and signal processing to support development of the SafePointe platform. 
+                </p>
+                <p>        
+                    For my senior thesis, I worked with Dr. Barbara Romanowicz and the Berkeley Global Seismology Group on constraining 
+                    shear wave splitting measurements for complex anisotropic media within the southwest Pacific. We showed that the incorporation 
+                    of high-quality direct S phases with SKS phases through azimuthal binning improves measurements of Splitting Intensity across 
+                    Australia and Indonesia. This novel Python workflow enables the measurement of receiver-side anisotropy for seismic stations 
+                    with limited source distributions. 
+                </p>
+                <p>
+                    During my REU Internship at Brown University with Karen Fischer, we used Ps receiver functions to measure the structure of the 
+                    Antarctic Ice Sheet. I developed MATLAB time-series analysis codes to better analyze temporal variations in ice properties, 
+                    and demonstrated via synthetic receiver functions that we can resolve changes in ice thickness down to 200m using seismic body waves. 
+                    We investigated heterogeneities in the ice and began development of a forward modeling scheme to optimize subsurface interpretation.
+                </p>
+                <p>
+                    I have presented my work at multiple conferences, and have developed a strong foundation in geophysical research. 
+                    I am currently looking for opportunities to continue my studies in seismology through doctoral programs starting Fall 2026. 
+                    Please feel free to reach out me regarding my work, future plans, or anything!
+                </p>
+            </div>
+
+            <div class="cv-download-home">
+                <a href="#" class="btn btn-primary">Download CV (PDF)</a>
             </div>
         </div>
     </section>
@@ -92,89 +70,43 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 
                 <div class="project-card">
                     <div class="project-number">01</div>
-                    <h3>Project Title One</h3>
-                    <p>A comprehensive web application built with modern technologies. Features include real-time data processing and intuitive user interface.</p>
+                    <h3>Shear Wave Splitting in the Southwest Pacific</h3>
+                    <p>Developed Python workflow for measuring receiver-side anisotropy using azimuthal binning of direct S and SKS phases. Improved splitting intensity measurements across Australia and Indonesia.</p>
                     <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">API</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Seismology</span>
+                        <span class="tag">Signal Processing</span>
                     </div>
                     <a href="#" class="project-link">View Project →</a>
                 </div>
 
                 <div class="project-card">
                     <div class="project-number">02</div>
-                    <h3>Project Title Two</h3>
-                    <p>An innovative solution for data visualization and analytics. Clean design meets powerful functionality.</p>
+                    <h3>Antarctic Ice Sheet Structure Analysis</h3>
+                    <p>Used Ps receiver functions to measure ice sheet structure. Developed MATLAB codes for time-series analysis of temporal variations in ice properties.</p>
                     <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Data Science</span>
-                        <span class="tag">Visualization</span>
+                        <span class="tag">MATLAB</span>
+                        <span class="tag">Receiver Functions</span>
+                        <span class="tag">Glaciology</span>
                     </div>
                     <a href="#" class="project-link">View Project →</a>
                 </div>
 
                 <div class="project-card">
                     <div class="project-number">03</div>
-                    <h3>Project Title Three</h3>
-                    <p>A responsive web platform designed for seamless user experience across all devices.</p>
+                    <h3>SafePointe Platform Development</h3>
+                    <p>Applied synthetic modeling and signal processing techniques to support acoustic sensor platform development at SoundThinking.</p>
                     <div class="project-tags">
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Responsive</span>
+                        <span class="tag">Data Science</span>
+                        <span class="tag">Signal Processing</span>
+                        <span class="tag">Modeling</span>
                     </div>
                     <a href="#" class="project-link">View Project →</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- CV Section -->
-    <section id="cv">
-        <div class="container">
-            <h2 class="section-title">Curriculum Vitae</h2>
-            <div class="cv-content">
-                
-                <div class="cv-section">
-                    <h3>Education</h3>
-                    <div class="cv-item">
-                        <div class="cv-header">
-                            <h4>Your Degree</h4>
-                            <span class="cv-date">2020 - 2024</span>
-                        </div>
-                        <p class="cv-institution">University Name</p>
-                        <p>Relevant coursework, achievements, or honors</p>
-                    </div>
-                </div>
-
-                <div class="cv-section">
-                    <h3>Experience</h3>
-                    <div class="cv-item">
-                        <div class="cv-header">
-                            <h4>Position Title</h4>
-                            <span class="cv-date">2023 - Present</span>
-                        </div>
-                        <p class="cv-institution">Company/Organization Name</p>
-                        <p>Description of your role and key accomplishments</p>
-                    </div>
-                    <div class="cv-item">
-                        <div class="cv-header">
-                            <h4>Previous Position</h4>
-                            <span class="cv-date">2021 - 2023</span>
-                        </div>
-                        <p class="cv-institution">Company/Organization Name</p>
-                        <p>Description of your role and key accomplishments</p>
-                    </div>
-                </div>
-
-                <div class="cv-download">
-                    <a href="#" class="btn btn-primary">Download Full CV (PDF)</a>
                 </div>
 
             </div>
@@ -187,34 +119,34 @@
             <h2 class="section-title">Research</h2>
             <div class="research-intro">
                 <p class="lead">
-                    My research focuses on [Your Research Area], exploring innovative approaches to [Your Focus].
+                    My research focuses on observational and theoretical seismology, exploring the interior structure of Earth and other planets through advanced geophysical techniques.
                 </p>
             </div>
             
             <div class="research-grid">
                 
                 <div class="research-card">
-                    <div class="research-type">Publication</div>
-                    <h3>Research Paper Title</h3>
-                    <p class="research-authors">Valencia, N., Co-Author, A. (2024)</p>
-                    <p>Brief description of your research paper and its key findings or contributions to the field.</p>
-                    <a href="#" class="research-link">Read Paper →</a>
+                    <div class="research-type">Senior Thesis</div>
+                    <h3>Constraining Shear Wave Splitting in Complex Anisotropic Media</h3>
+                    <p class="research-authors">Valencia, N., Romanowicz, B. | UC Berkeley (2024)</p>
+                    <p>Novel approach to measuring splitting intensity in the southwest Pacific using azimuthal binning of direct S and SKS phases. Developed Python workflow for stations with limited source distributions.</p>
+                    <a href="#" class="research-link">Read More →</a>
                 </div>
 
                 <div class="research-card">
-                    <div class="research-type">Project</div>
-                    <h3>Research Project Title</h3>
-                    <p class="research-authors">Ongoing Research | 2024</p>
-                    <p>Description of your current research project, methodology, and expected outcomes.</p>
+                    <div class="research-type">REU Project</div>
+                    <h3>Seismic Analysis of Antarctic Ice Sheet Structure</h3>
+                    <p class="research-authors">Brown University REU | Advisor: Karen Fischer (2023)</p>
+                    <p>Applied Ps receiver functions to characterize ice sheet properties. Demonstrated 200m resolution capability for detecting thickness changes using seismic body waves.</p>
                     <a href="#" class="research-link">Learn More →</a>
                 </div>
 
                 <div class="research-card">
                     <div class="research-type">Conference</div>
-                    <h3>Conference Presentation</h3>
-                    <p class="research-authors">Conference Name | 2023</p>
-                    <p>Summary of your conference presentation and the insights shared with the academic community.</p>
-                    <a href="#" class="research-link">View Slides →</a>
+                    <h3>Conference Presentations</h3>
+                    <p class="research-authors">AGU, SSA, and other venues | 2023-2024</p>
+                    <p>Presented research findings on seismic anisotropy and ice sheet structure to the geophysical community at multiple national and international conferences.</p>
+                    <a href="#" class="research-link">View Presentations →</a>
                 </div>
 
             </div>
@@ -228,7 +160,7 @@
             <div class="contact-content">
                 <div class="contact-text">
                     <p class="lead">
-                        Have a project in mind or want to collaborate? I'd love to hear from you.
+                        Interested in collaborating or discussing seismology research? I'd love to connect.
                     </p>
                     <div class="contact-info">
                         <div class="contact-item">
@@ -237,7 +169,7 @@
                         </div>
                         <div class="contact-item">
                             <h4>Location</h4>
-                            <p>Your City, Country</p>
+                            <p>Berkeley, CA</p>
                         </div>
                     </div>
                 </div>
@@ -252,8 +184,8 @@
                             <span>LinkedIn</span>
                             <span class="arrow">→</span>
                         </a>
-                        <a href="https://twitter.com/yourhandle" class="social-link">
-                            <span>Twitter</span>
+                        <a href="https://orcid.org/yourorcid" class="social-link">
+                            <span>ORCID</span>
                             <span class="arrow">→</span>
                         </a>
                     </div>
@@ -266,7 +198,6 @@
     <footer>
         <div class="footer-content">
             <p>&copy; <span id="year"></span> Nico Valencia</p>
-            <p>Designed & Built with passion</p>
         </div>
     </footer>
 
