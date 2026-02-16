@@ -58,12 +58,17 @@ body {
   margin: 0 0 6px;
   font-size: 2rem;
   line-height: 1.2;
-  margin-bottom: 24px;
 }
 
 .subtitle {
   margin: 0 0 18px;
   color: var(--muted);
+}
+
+/* Adds space between the header block and the main text section
+   (e.g., above “I am a recent graduate…”) */
+.page-header + .content{
+  margin-top: 24px;
 }
 
 .content h2 {
@@ -72,12 +77,15 @@ body {
 }
 
 .content h3 {
-  margin-top: 24px;
   margin: 18px 0 8px;
   font-size: 1.05rem;
 }
 
-p { margin: 0 0 12px; color: var(--muted); max-width: 75ch; }
+p {
+  margin: 0 0 12px;
+  color: var(--muted);
+  max-width: 75ch;
+}
 
 a { color: var(--link); }
 a:hover { text-decoration: underline; }
@@ -99,6 +107,7 @@ a:focus-visible {
   border-radius: 6px;
 }
 
+/* Profile picture */
 .profile-pic{
   width: 410px;
   height: 410px;
@@ -107,7 +116,7 @@ a:focus-visible {
   border: 1px solid var(--border);
 }
 
-/* only if you use Option B */
+/* Header row layout (text on left, image on right) */
 .header-row{
   display: flex;
   align-items: center;
@@ -119,5 +128,11 @@ a:focus-visible {
   .header-row{
     flex-direction: column-reverse;
     align-items: flex-start;
+  }
+
+  /* Keep image reasonable on small screens */
+  .profile-pic{
+    width: 220px;
+    height: 220px;
   }
 }
