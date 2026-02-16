@@ -1,185 +1,98 @@
-/* /css/main.css */
+/* css/main.css */
 
-/* Theme */
+/* Simple, white, readable */
 :root {
-  --font-body: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --font-display: "Space Grotesk", Inter, system-ui, sans-serif;
-
-  /* Colors (dark, modern) */
-  --bg: #0b1220;
-  --bg-2: #070c16;
-  --text: rgba(255, 255, 255, 0.92);
-  --muted: rgba(255, 255, 255, 0.70);
-
-  --card: rgba(255, 255, 255, 0.06);
-  --card-2: rgba(255, 255, 255, 0.10);
-  --border: rgba(255, 255, 255, 0.14);
-
-  --accent: #7c3aed;   /* purple */
-  --accent-2: #22c55e; /* green */
-
-  --shadow: 0 14px 34px rgba(0, 0, 0, 0.38);
-  --radius: 16px;
-
-  --maxw: 980px;
+  --text: #111;
+  --muted: #444;
+  --border: #e6e6e6;
+  --link: #0b57d0; /* simple blue */
+  --maxw: 900px;
 }
 
-/* Base */
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html, body { margin: 0; padding: 0; }
 
 body {
-  margin: 0;
-  font-family: var(--font-body);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--text);
+  background: #fff;
   line-height: 1.65;
-
-  background:
-    radial-gradient(1100px 700px at 18% 12%, rgba(124, 58, 237, 0.28), transparent 60%),
-    radial-gradient(1000px 650px at 80% 18%, rgba(34, 197, 94, 0.18), transparent 55%),
-    linear-gradient(180deg, var(--bg), var(--bg-2));
-}
-
-/* Make default elements look nicer */
-h1, h2, h3 {
-  font-family: var(--font-display);
-  letter-spacing: -0.02em;
-  line-height: 1.15;
-  margin: 0 0 0.65rem;
-}
-
-h1 { font-size: clamp(2rem, 4vw, 3rem); }
-h2 { font-size: clamp(1.25rem, 2.3vw, 1.65rem); color: rgba(255,255,255,0.86); }
-h3 { font-size: 1.05rem; color: rgba(255,255,255,0.88); }
-
-p {
-  margin: 0 0 1rem;
-  color: var(--muted);
-  max-width: 70ch;
-}
-
-a {
-  color: rgba(255,255,255,0.88);
-  text-decoration: none;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-}
-
-a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-  text-decoration-color: rgba(124,58,237,0.8);
-}
-
-strong, b { color: rgba(255,255,255,0.92); }
-
-/* Layout helpers used by your HTML */
-.container {
-  width: min(var(--maxw), calc(100% - 2rem));
-  margin: 0 auto;
-  padding: 40px 0 72px;
-}
-
-/* Home page content card */
-.blurb {
-  background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.03));
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(10px);
-
-  padding: 28px;
-}
-
-/* Research page wrapper (matches container width) */
-.Research {
-  width: min(var(--maxw), calc(100% - 2rem));
-  margin: 0 auto;
-  padding: 40px 0 72px;
-}
-
-.Research > h1 {
-  margin-bottom: 1.2rem;
-}
-
-.Research > h2 {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255,255,255,0.10);
-}
-
-/* Slight “card” treatment for each research entry without changing HTML */
-.Research h3 {
-  margin-top: 1.25rem;
-}
-
-.Research h3 + p {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.10);
-  border-radius: 14px;
-  padding: 14px 16px;
-  box-shadow: 0 10px 22px rgba(0,0,0,0.22);
 }
 
 /* Nav */
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-
-  background: rgba(11, 18, 32, 0.62);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.10);
+.site-nav {
+  border-bottom: 1px solid var(--border);
+  background: #fff;
 }
 
-nav ul {
+.site-nav ul {
   list-style: none;
   margin: 0 auto;
-  padding: 12px 1rem;
-
-  width: min(var(--maxw), calc(100% - 2rem));
-
+  padding: 12px 16px;
+  width: min(var(--maxw), 100%);
   display: flex;
   flex-wrap: wrap;
   gap: 10px 14px;
-  align-items: center;
 }
 
-nav li { margin: 0; padding: 0; }
-
-nav a {
-  display: inline-flex;
-  padding: 8px 12px;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  color: rgba(255,255,255,0.76);
-  font-weight: 600;
-}
-
-nav a:hover {
-  color: rgba(255,255,255,0.95);
-  background: rgba(255,255,255,0.06);
-  border-color: rgba(255,255,255,0.10);
+.site-nav a {
+  color: var(--text);
   text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 6px;
 }
 
-/* Optional: style images if you add a headshot later */
-img {
-  max-width: 100%;
-  height: auto;
+.site-nav a:hover {
+  background: #f5f5f5;
 }
 
-/* Small screens */
-@media (max-width: 640px) {
-  .blurb { padding: 20px; }
-  .container, .Research { padding: 26px 0 56px; }
-  nav a { padding: 8px 10px; }
+/* Layout */
+.container {
+  width: min(var(--maxw), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 60px;
 }
 
-/* Accessibility: visible focus */
+.page-header h1 {
+  margin: 0 0 6px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.content h2 {
+  margin: 28px 0 12px;
+  font-size: 1.25rem;
+}
+
+.content h3 {
+  margin: 18px 0 8px;
+  font-size: 1.05rem;
+}
+
+p { margin: 0 0 12px; color: var(--muted); max-width: 75ch; }
+
+a { color: var(--link); }
+a:hover { text-decoration: underline; }
+
+.item {
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+}
+
+.item:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+/* Better focus for keyboard users */
 a:focus-visible {
-  outline: 3px solid rgba(124,58,237,0.75);
-  outline-offset: 3px;
-  border-radius: 10px;
+  outline: 3px solid rgba(11, 87, 208, 0.25);
+  outline-offset: 2px;
+  border-radius: 6px;
 }
