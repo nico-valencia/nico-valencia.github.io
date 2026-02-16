@@ -97,13 +97,20 @@ a:focus-visible {
   border-radius: 6px;
 }
 
+.profile-pic{
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
 
 /* only if you use Option B */
 .header-row{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 24px;
 }
 
 @media (max-width: 600px){
