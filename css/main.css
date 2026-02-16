@@ -98,8 +98,8 @@ a:focus-visible {
 }
 
 .profile-pic{
-  width: 210px;
-  height: 210px;
+  width: 410px;
+  height: 410px;
   object-fit: cover;
   border-radius: 12px;
   border: 1px solid var(--border);
