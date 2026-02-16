@@ -96,3 +96,19 @@ a:focus-visible {
   outline-offset: 2px;
   border-radius: 6px;
 }
+
+
+/* only if you use Option B */
+.header-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+@media (max-width: 600px){
+  .header-row{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
