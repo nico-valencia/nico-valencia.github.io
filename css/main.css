@@ -68,7 +68,7 @@ body {
 }
 
 /* Adds space between the header block and the main text section
-   (e.g., above “I am a recent graduate…”) */
+   (e.g., above "I am a recent graduate…") */
 .page-header + .content{
   margin-top: 24px;
 }
@@ -126,6 +126,53 @@ a:focus-visible {
   gap: 24px;
 }
 
+/* Research item layout with images */
+.research-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 24px 0;
+}
+
+.research-content {
+  flex: 2;
+}
+
+.research-content p {
+  max-width: none; /* Remove the 75ch limit for research content */
+}
+
+.research-image {
+  flex: 1;
+  max-width: 320px;
+  min-width: 250px;
+}
+
+.abstract-pic {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 900px) {
+  .research-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .research-image {
+    max-width: 100%;
+    min-width: auto;
+  }
+  
+  .abstract-pic {
+    height: 200px;
+  }
+}
+
 @media (max-width: 600px){
   .header-row{
     flex-direction: column-reverse;
@@ -136,5 +183,9 @@ a:focus-visible {
   .profile-pic{
     width: 220px;
     height: 220px;
+  }
+  
+  .abstract-pic {
+    height: 180px;
   }
 }
