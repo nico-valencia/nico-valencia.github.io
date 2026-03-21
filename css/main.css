@@ -111,8 +111,8 @@ a:focus-visible {
 
 /* Profile picture */
 .profile-pic{
-  width: 410px;
-  height: 410px;
+  width: 510px;
+  height: 510px;
   object-fit: cover;
   border-radius: 12px;
   border: 1px solid var(--border);
