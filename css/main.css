@@ -144,16 +144,6 @@ a:focus-visible {
   line-height: 1.6;
 }
 
-.abstract-pic {
-  width: 100%;
-  height: auto; /* Natural height based on aspect ratio */
-  object-fit: none; /* Don't manipulate the image */
-  border-radius: 0;
-  border: 1px solid var(--border);
-  display: block;
-  max-width: 100%;
-}
-
 /* Container for research images */
 .research-images {
   flex: 1;
@@ -169,6 +159,15 @@ a:focus-visible {
   margin: 0; /* Remove default figure margin */
 }
 
+.abstract-pic {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain; /* Show full image, scale to fit */
+  border-radius: 0;
+  border: 1px solid var(--border);
+  display: block;
+}
 
 /* Image captions */
 figcaption {
@@ -199,7 +198,7 @@ figcaption {
   }
   
   .abstract-pic {
-    max-height: 350px; /* Reduced max height for smaller screens */
+    max-height: 300px;
   }
 }
 
@@ -214,7 +213,7 @@ figcaption {
   }
   
   .abstract-pic {
-    max-height: 300px;
+    max-height: 280px;
   }
 }
 
