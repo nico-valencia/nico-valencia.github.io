@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Code and computational projects by Nicolas Valencia." />
+  <title>Code | Nicolas Valencia</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/research">Research</a></li>
+      <li><a href="/field-notes">Field Notes</a></li>
+      <li><a href="/writing">Writing</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/publications">Publications</a></li>
+      <li><a href="/code" class="active">Code</a></li>
+      <li><a href="/assets/valencia_cv_jan_2025.pdf" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <h1>Code</h1>
+      <p class="page-subtitle">
+        Computational tools and workflows for seismic analysis. I build software to process 
+        large datasets, measure seismic properties, and visualize results.
+      </p>
+    </header>
+
+    <section class="code-overview">
+      <h2>Tools & Technologies</h2>
+      <div class="tech-grid">
+        <div class="tech-category">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>Bash/Shell</li>
+            <li>MATLAB</li>
+          </ul>
+        </div>
+        <div class="tech-category">
+          <h3>Seismic Libraries</h3>
+          <ul>
+            <li>ObsPy</li>
+            <li>SAC</li>
+            <li>TauP</li>
+          </ul>
+        </div>
+        <div class="tech-category">
+          <h3>Scientific Computing</h3>
+          <ul>
+            <li>NumPy / SciPy</li>
+            <li>Pandas</li>
+            <li>Jupyter</li>
+          </ul>
+        </div>
+        <div class="tech-category">
+          <h3>Visualization</h3>
+          <ul>
+            <li>Matplotlib</li>
+            <li>PyGMT</li>
+            <li>Cartopy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Shear-Wave Splitting Toolkit</h3>
+        <p>
+          A Python-based workflow for measuring shear-wave splitting from SKS and direct S phases. 
+          Includes automated waveform retrieval, quality control, splitting intensity calculations, 
+          and multi-layer anisotropy fitting.
+        </p>
+        <p class="project-tech">Python · ObsPy · NumPy · Matplotlib</p>
+        <!-- <a href="https://github.com/nico-valencia/splitting-toolkit" class="project-link">View on GitHub →</a> -->
+        <p class="project-status">In development — code will be released with publication</p>
+      </article>
+
+      <article class="project">
+        <h3>Receiver Function Processing</h3>
+        <p>
+          Scripts for computing and analyzing Ps receiver functions, with applications to ice sheet 
+          structure in Antarctica. Includes synthetic receiver function generation and forward modeling.
+        </p>
+        <p class="project-tech">Python · ObsPy · SciPy</p>
+        <p class="project-status">Developed during Brown University REU</p>
+      </article>
+
+      <article class="project">
+        <h3>Seismic Data Visualization</h3>
+        <p>
+          Tools for creating publication-quality maps and figures for seismology research. 
+          Includes templates for splitting measurements, receiver function stacks, and 
+          station/event maps.
+        </p>
+        <p class="project-tech">PyGMT · Cartopy · Matplotlib</p>
+      </article>
+    </section>
+
+    <section class="github-section">
+      <h2>GitHub</h2>
+      <p>
+        Find my repositories and contributions at 
+        <a href="https://github.com/nico-valencia" target="_blank" rel="noopener">github.com/nico-valencia</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>

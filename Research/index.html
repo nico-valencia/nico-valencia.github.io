@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Research by Nicolas Valencia — seismic anisotropy, ocean-bottom seismology, and computational geophysics." />
   <title>Research | Nicolas Valencia</title>
-
   <link rel="stylesheet" href="/css/main.css" />
 </head>
 
@@ -12,152 +12,210 @@
   <nav class="site-nav">
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/assets/valencia_cv_jan_2025.pdf" target="_blank" rel="noopener">Vita</a></li>
-      <li><a href="/Research">Research</a></li>
-      <!-- <li><a href="/Publications">Publications</a></li> -->
-      <!-- <li><a href="/Downloads">Downloads</a></li> -->
+      <li><a href="/research" class="active">Research</a></li>
+      <li><a href="/field-notes">Field Notes</a></li>
+      <li><a href="/writing">Writing</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/publications">Publications</a></li>
+      <li><a href="/code">Code</a></li>
+      <li><a href="/assets/valencia_cv_jan_2025.pdf" target="_blank" rel="noopener">CV</a></li>
     </ul>
   </nav>
 
   <main class="container">
     <header class="page-header">
       <h1>Research</h1>
+      <p class="page-subtitle">
+        I use seismic waves to study how the Earth's interior is structured and how it deforms.
+      </p>
     </header>
 
-    <!-- Full-width Research Interests Section -->
-    <section class="research-interests-section">
-      <h2>Research Interests</h2>
-      <div class="interests-content">
+    <!-- Research Areas Overview -->
+    <section class="research-areas">
+      <nav class="research-nav">
+        <a href="#anisotropy">Seismic Anisotropy</a>
+        <a href="#obs">Ocean-Bottom Seismology</a>
+        <a href="#computational">Computational Methods</a>
+        <a href="#previous">Previous Research</a>
+      </nav>
+    </section>
+
+    <!-- Seismic Anisotropy -->
+    <section id="anisotropy" class="research-section">
+      <h2>Seismic Anisotropy & Shear-Wave Splitting</h2>
+      
+      <div class="research-intro">
         <p>
-          My research has mainly been within structural seismology, with a focus on understanding Earth's internal structure and dynamics. 
-          I am fascinated by how seismic waves can reveal the complex structure and dynamics of the deep Earth, and how they can be used to 
-          advance our understanding of planetary structure and evolution. 
-        </p>
-        <p>
-          Currently, my work centers on measuring azimuthal anisotropy within the upper mantle of the southwest Pacific. 
-          I enjoy developing and refining seismological methods to extract maximum information from seismic data, 
-          especially within challenging or data-sparse regions. My approach combines aspects of theoretical and observational seismology 
-          to not only improve existing seismic data processing methods, but to improve our physical understanding of the forces at play within 
-          the interior of the Earth.
-        </p>
-        <p>
-          I am drawn to the broader applications of seismology, and general advancement in geophysical inversion methods. 
-          I have completed prior work in using seismology to investigate temporal changes in the Antarctic Ice Sheet, 
-          with potential implications for the monitoring of solid Earth climate change response. I have experience in the development 
-          and technical analysis of a magnetometer detection system; this was done in parallel with the development of magnetic 
-          inversion techniques for security purposes. My interests span a variety of fields, all of them rooted in the techniques 
-          and methods commonly found in geophysics.
+          When seismic waves travel through the Earth's mantle, they don't always travel at the same 
+          speed in every direction. This <em>anisotropy</em> arises because olivine crystals in the mantle 
+          align in response to deformation and flow. By measuring how shear waves split into fast and 
+          slow components, we can map the orientation and strength of anisotropy—and infer the patterns 
+          of mantle flow that created it.
         </p>
       </div>
-    </section>
 
-    <!-- Regular content section for conference presentations -->
-    <section class="content">
-      <h2>Conference Presentations</h2>
-
-      <article class="item research-item">
+      <article class="research-project" id="agu-2024-anisotropy">
         <div class="research-content">
-          <h3>Constraining Source and Station Side Azimuthal Anisotropy in the Southwest Pacific Using Shear Wave Splitting Measurements (AGU 2024)</h3>
+          <h3>Azimuthal Anisotropy in the Southwest Pacific</h3>
           <p>
-            The presence of seismic anisotropy in the upper mantle is well-known and attributed to the alignment of olivine crystals from past and/or present mantle flow.
-            Constraining it is important for improving our understanding of the formation and evolution of the lithosphere-asthenosphere system and deeper mantle flow around
-            subducted slabs.
+            My primary research focuses on measuring azimuthal anisotropy in the upper mantle beneath 
+            the Southwest Pacific—a tectonically complex region with multiple subduction zones, back-arc 
+            basins, and the Australian continental margin.
           </p>
           <p>
-            This study focuses on developing a reliable catalog of azimuthal anisotropy measurements for the southwest Pacific using a combination of station-side and source-side
-            anisotropy methodologies. Effective methods utilizing shear wave splitting of SKS phases to measure station side azimuthal anisotropy have been developed, assuming good
-            azimuthal coverage of sources. However, when applied to the southwest Pacific, our past results from station-side anisotropy analysis indicate poor azimuthal coverage for
-            SKS phases and complex anisotropic structure, compounded by a lack of long-enough broadband recordings to perform robust measurements.
+            Traditional SKS splitting methods struggle here due to poor azimuthal coverage and complex 
+            anisotropic structure. I'm developing methods that combine SKS phases with direct S waves 
+            from deep earthquakes, using splitting intensity to extract robust measurements even from 
+            challenging data.
           </p>
           <p>
-            These challenges necessitate the usage of alternative methods, such as splitting measurements of S waves from deep earthquakes at shorter distances and measurements of
-            source-side anisotropy to complement our current methodology. While these methods are harder to implement, they are suitable for the southwest Pacific, where the frequent
-            seismicity from numerous subduction zones provides complementary sampling of the upper mantle in the region.
+            These measurements will serve as constraints for full-waveform azimuthal anisotropy tomography 
+            of the region, helping us understand the coupling between subduction dynamics and upper mantle flow.
           </p>
-          <p>
-            Additional waveforms and their associated methods will be incorporated into our current measurement process, enabling us to achieve a more comprehensive anisotropic model
-            of the region. Results from these refined measurements will be contributed as constraints for the full waveform azimuthal anisotropy tomography of the southwest Pacific
-            upper mantle and transition zone.
+          <p class="research-context">
+            <strong>Collaborators:</strong> Barbara Romanowicz, Marco Malusà, BSL Broadband Team<br>
+            <strong>Presented:</strong> AGU Fall Meeting 2024
           </p>
         </div>
-        <div class="research-images">
-          <figure class="research-image">
-            <img src="/images/research/autralia_splitting_map.png" alt="Map of Splitting Intensity values measured for Australia" class="abstract-pic">
-            <figcaption>Splitting intensity measurements across Australia showing azimuthal anisotropy patterns in the upper mantle.</figcaption>
+        <div class="research-figures">
+          <figure>
+            <img src="/images/research/autralia_splitting_map.png" alt="Map of splitting intensity measurements across Australia" />
+            <figcaption>Splitting intensity measurements across Australia, revealing patterns of upper mantle anisotropy.</figcaption>
           </figure>
-          <figure class="research-image">
-            <img src="/images/research/TOO_SI_results.png" alt="Splitting Intensity Curve for station TOO" class="abstract-pic">
-            <figcaption>Splitting intensity curve for station TOO demonstrating azimuthal variation in splitting parameters using SKS and direct S phases.</figcaption>
+          <figure>
+            <img src="/images/research/TOO_SI_results.png" alt="Splitting intensity curve for station TOO" />
+            <figcaption>Azimuthal variation in splitting intensity at station TOO, using both SKS and direct S phases.</figcaption>
           </figure>
         </div>
       </article>
 
-      <article class="item research-item">
+      <article class="research-project" id="ssa-2024">
         <div class="research-content">
-          <h3>Investigating Antarctic Ice Sheet Properties Using Ps Receiver Functions (AGU 2024)</h3>
+          <h3>Multi-Layer Anisotropy Methods</h3>
           <p>
-            In this study, we used seismic waves, specifically Ps receiver functions, to measure the thickness and internal properties of the Antarctic Ice Sheet. Ice mass changes in
-            the Antarctic Ice Sheet happen on wide-ranging time scales. Understanding these variations is crucial due to their implications for changes in global sea level.
+            Standard shear-wave splitting methods assume a single layer of anisotropy with a horizontal 
+            symmetry axis. But the real Earth often has multiple anisotropic layers—perhaps from different 
+            episodes of deformation, or from the lithosphere and asthenosphere contributing different signals.
           </p>
           <p>
-            While many types of geophysical data provide information on ice sheet properties, Ps waves and their reverberations recorded by Antarctic stations can constrain ice sheet
-            structure over lateral length scales of a few kilometers local to the station, in some cases continuously over the last two decades. Synthetic Ps receiver functions,
-            calculated for a range of ice sheet structural models, demonstrate that trade-offs exist between ice thickness, average ice Vs and Vp, and internal layering.
+            I've been developing methods to measure and model multi-layer anisotropy using splitting intensity, 
+            building on theoretical expressions that describe how SI varies with backazimuth when multiple 
+            layers are present. This allows more robust measurements in regions with complex structure.
           </p>
-          <p>
-            At relatively high frequencies (e.g., waveforms filtered at 0.3-4.0 Hz), Ps receiver functions can resolve changes in ice thickness of ~200 m and velocity variations of ~5%.
-            In addition, the presence of thin low-velocity layers at the base of the ice sheet, for example, due to liquid water or water-rich sediments, significantly impact Ps receiver
-            function phases.
-          </p>
-          <p>
-            Data from several broadband stations on the Antarctic Ice Sheet show remarkably clear Ps conversions from the base of the ice and their first reverberation (Ppps). At some
-            stations, differences in Ps receiver functions stacked in back-azimuthal bins reveal lateral heterogeneities in local ice sheet structure. For stations that have been operating
-            for decades, we are in the process of investigating whether statistically robust secular variations are present within the receiver function phases. This approach to measuring
-            ice sheet properties has the potential to yield new constraints on changes in ice mass over decadal time scales.
+          <p class="research-context">
+            <strong>Collaborators:</strong> Barbara Romanowicz<br>
+            <strong>Presented:</strong> SSA Annual Meeting 2024
           </p>
         </div>
-        <div class="research-images">
-          <figure class="research-image">
-            <img src="/images/research/Ps_synthetic_ice.png" alt="Ps synthetics for ice sheet structure" class="abstract-pic">
-            <figcaption>Synthetic Ps receiver functions for ice sheet structure.</figcaption>
-          </figure>
-          <figure class="research-image">
-            <img src="/images/research/CCD_Ps_rf.png" alt="Antarctic ice sheet research visualization" class="abstract-pic">
-            <figcaption>Real Ps receiver functions from Antarctic station CCD.</figcaption>
-          </figure>
-        </div>
-      </article>
-
-      <article class="item research-item">
-        <div class="research-content">
-          <h3>Refining Splitting Intensity Measurements of Shear Wave Splitting for Multi-Layer Anisotropy (SSA 2024)</h3>
-          <p>
-            The presence of seismic anisotropy within the Earth's upper mantle is wellknown and observed. Methods for measuring azimuthal anisotropy through shear wave splitting
-            (Silver &amp; Chan 1991, Vinnik et al. 1989) are proven to be effective, assuming a single layer of anisotropy with horizontal symmetry. However, these methods become less
-            reliable when applied to regions of the Earth with more than one anisotropic layer.
-          </p>
-          <p>
-            Results from these methods in the southwest Pacific imply non-orthogonal polarization directions, indicative of multi-layer anisotropy. The mentioned methodologies can produce
-            multilayer anisotropy measurements, but the resolution is highly dependent on azimuthal coverage and seismic data quality. Splitting Intensity (SI) is a robust method to measure
-            azimuthal anisotropy from lower-quality data (Chevrot 2000), but it is mainly applied to single layer anisotropy. Based on previously published theoretical expressions
-            (Romanowicz &amp; Yuan 2011), SI can be calculated from multiple layers of anisotropy.
-          </p>
-          <p>
-            The focus of this study is to develop a robust measurement process for shear wave splitting in complex anisotropic media, incorporating the multi-layer expression of SI to solve
-            for station-average anisotropic measurements. A double grid search method is applied to obtain splitting parameters from seismic data. Preliminary results of SI from stations
-            inferred to have multi-layer anisotropy correlate with results presented with the theoretical expressions. Further development is required to refine the SI results obtained from
-            this continually improving method. Results from this finer-constrained measurement process will be contributed as constraints for azimuthal anisotropy full waveform tomography of
-            the southwest Pacific upper mantle and transition zone.
-          </p>
-        </div>
-        <div class="research-images">
-          <figure class="research-image">
-            <img src="/images/research/TAM_tmm_plot.png" alt="Transverse Minimization Method for event at station TAM" class="abstract-pic">
-            <figcaption>Transverse minimization method results at station TAM.</figcaption>
+        <div class="research-figures">
+          <figure>
+            <img src="/images/research/TAM_tmm_plot.png" alt="Transverse minimization method results" />
+            <figcaption>Transverse minimization analysis at station TAM, showing the search for optimal splitting parameters.</figcaption>
           </figure>
         </div>
       </article>
     </section>
+
+    <!-- Ocean-Bottom Seismology -->
+    <section id="obs" class="research-section">
+      <h2>Ocean-Bottom Seismology</h2>
+      
+      <div class="research-intro">
+        <p>
+          Most of Earth's surface is covered by oceans, but most seismometers are on land. This leaves 
+          vast regions of the planet poorly sampled. Ocean-bottom seismometers (OBS) allow us to record 
+          seismic waves in oceanic regions—but they come with unique challenges: noise from ocean currents, 
+          instrument coupling, and limited deployment durations.
+        </p>
+      </div>
+
+      <article class="research-project">
+        <div class="research-content">
+          <h3>PhD Research at UCSB</h3>
+          <p>
+            Beginning in 2026, my PhD research at UC Santa Barbara will focus on ocean-bottom seismology 
+            and new OBS datasets. I'll be studying seismic structure beneath oceanic regions, developing 
+            methods for OBS data analysis, and working to fill in the gaps in our imaging of Earth's interior.
+          </p>
+          <p>
+            More details will be added here as my research develops.
+          </p>
+          <p class="research-context">
+            <strong>Advisor:</strong> TBD<br>
+            <strong>Starting:</strong> Fall 2026
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Computational Seismology -->
+    <section id="computational" class="research-section">
+      <h2>Computational Seismology</h2>
+      
+      <div class="research-intro">
+        <p>
+          Modern seismology involves processing thousands of waveforms, managing large datasets, and 
+          building reproducible analysis workflows. I develop computational tools for seismic data 
+          processing, measurement automation, and visualization.
+        </p>
+      </div>
+
+      <article class="research-project">
+        <div class="research-content">
+          <h3>Tools & Approaches</h3>
+          <ul class="research-list">
+            <li><strong>Waveform processing:</strong> Automated workflows for downloading, preprocessing, and quality-controlling seismic data using ObsPy</li>
+            <li><strong>Splitting measurements:</strong> Python implementations of splitting intensity and transverse minimization methods</li>
+            <li><strong>Visualization:</strong> Publication-quality figures using Matplotlib, PyGMT, and Cartopy</li>
+            <li><strong>Reproducibility:</strong> Version-controlled analysis pipelines designed to be transparent and shareable</li>
+          </ul>
+          <p>
+            See the <a href="/code">Code</a> page for more details on specific projects.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Previous Research -->
+    <section id="previous" class="research-section">
+      <h2>Previous Research</h2>
+
+      <article class="research-project" id="agu-2024-antarctica">
+        <div class="research-content">
+          <h3>Antarctic Ice Sheet Structure from Receiver Functions</h3>
+          <p>
+            During a summer REU at Brown University, I worked on using Ps receiver functions to study the 
+            Antarctic ice sheet. Seismic waves convert from P to S at sharp velocity contrasts—including 
+            the base of the ice sheet—allowing us to measure ice thickness and internal properties.
+          </p>
+          <p>
+            At high frequencies, receiver functions can resolve ice thickness changes of ~200 m and 
+            velocity variations of ~5%. We also found that thin low-velocity layers at the base of the 
+            ice (possibly liquid water or wet sediments) produce distinctive receiver function signatures.
+          </p>
+          <p>
+            For stations operating over decades, this approach has the potential to detect secular changes 
+            in ice mass—a new way to monitor ice sheet evolution using seismic data.
+          </p>
+          <p class="research-context">
+            <strong>Collaborators:</strong> Chengxin Gao, Karen Fischer<br>
+            <strong>Institution:</strong> Brown University<br>
+            <strong>Presented:</strong> AGU Fall Meeting 2024
+          </p>
+        </div>
+        <div class="research-figures">
+          <figure>
+            <img src="/images/research/Ps_synthetic_ice.png" alt="Synthetic receiver functions for ice sheet models" />
+            <figcaption>Synthetic Ps receiver functions showing sensitivity to ice sheet structure.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/research/CCD_Ps_rf.png" alt="Receiver functions from Antarctic station CCD" />
+            <figcaption>Observed receiver functions from Antarctic station CCD, showing clear ice-base conversions.</figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+
   </main>
 </body>
 </html>

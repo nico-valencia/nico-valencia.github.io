@@ -3,114 +3,106 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nicolas Valencia — Geophysicist and seismologist studying Earth's interior through seismic waves. PhD student at UC Santa Barbara." />
+  <meta name="author" content="Nicolas Valencia" />
   <title>Nicolas Valencia</title>
-
   <link rel="stylesheet" href="/css/main.css" />
 </head>
 
-<body>
+<body class="home">
   <nav class="site-nav">
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/assets/valencia_cv_jan_2025.pdf" target="_blank" rel="noopener">Vita</a></li>
-      <li><a href="/Research">Research</a></li>
-      <!-- <li><a href="/Publications">Publications</a></li> -->
-      <!-- <li><a href="/Downloads">Downloads</a></li> -->
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/research">Research</a></li>
+      <li><a href="/field-notes">Field Notes</a></li>
+      <li><a href="/writing">Writing</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/publications">Publications</a></li>
+      <li><a href="/code">Code</a></li>
+      <li><a href="/assets/valencia_cv_jan_2025.pdf" target="_blank" rel="noopener">CV</a></li>
     </ul>
   </nav>
 
-  <main class="container">
-
-    <header class="page-header header-row">
-    <div>
+  <main class="home-main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
         <h1>Nicolas Valencia</h1>
-        <p class="subtitle">Incoming PhD Student, UC Santa Barbara</p>
-        
-    </div>
-
-    <img class="profile-pic" src="/images/nicolas_valencia.jpg" alt="Portrait of Nicolas Valencia">
-    </header>
-
-    <section class="content">
-        <p>
-        I am an incoming PhD student at UC Santa Barbara, where I will study the structure and dynamics of the Earth's interior using 
-        seismic waves. I received my B.A. from UC Berkeley with a double major in geophysics and astrophysics.
+        <p class="tagline">Geophysics · Seismology · Earth</p>
+        <p class="intro-statement">
+          I study the waves that travel through the Earth to understand how its interior is structured, deformed, and changing.
         </p>
-        
-        <p>
-	      My past research focuses on measuring azimuthal anisotropy in the southwest Pacific using station-side measurements from multiple body wave phase types, 
-        integrating observational and theoretical seismology. The results of this work will serve as constraints for the full-waveform tomography of the southwest Pacific, 
-        which is being developed within the Global Seismology Research Group.
-        </p>
+      </div>
+      <div class="hero-visual">
+        <img src="/images/nicolas_valencia.jpg" alt="Nicolas Valencia" class="hero-portrait" />
+      </div>
+    </section>
 
-        <p> 
-        Broadly, I am particularly interested in applying my skills to better understand the interior structure of the Earth and other
-        terrestrial planets, with the goal of contributing to our knowledge of planetary structure and evolution. Specifically, I am interested
-        in studies of the lithosphere and asthenosphere, the coupling between deep Earth geodynamic processes and tectonic expression, and
-        general advancements in geophysical inversion methods.
-        </p>
+    <!-- Visual Grid Navigation -->
+    <section class="visual-grid">
+      <a href="/research" class="grid-card grid-card--research">
+        <div class="grid-card-image">
+          <img src="/images/research/autralia_splitting_map.png" alt="Seismic anisotropy map" />
+        </div>
+        <div class="grid-card-content">
+          <h2>Research</h2>
+          <p>Seismic anisotropy, shear-wave splitting, and the structure of Earth's interior</p>
+          <span class="grid-card-arrow">→</span>
+        </div>
+      </a>
 
-        <p>
-        Please feel free to explore my work on the <a href="/Research">Research</a> page or contact me via email for further inquiries.
-        </p>
+      <a href="/field-notes" class="grid-card grid-card--field">
+        <div class="grid-card-image">
+          <img src="/images/research/TOO_SI_results.png" alt="Field work" />
+        </div>
+        <div class="grid-card-content">
+          <h2>Field Notes</h2>
+          <p>Deployments, instruments, and the experience of doing Earth science</p>
+          <span class="grid-card-arrow">→</span>
+        </div>
+      </a>
 
-        <p>
-        Email: nicolasv03 (at) berkeley (dot) edu
-        </p>
+      <a href="/writing" class="grid-card grid-card--writing">
+        <div class="grid-card-image">
+          <img src="/images/research/Ps_synthetic_ice.png" alt="Writing" />
+        </div>
+        <div class="grid-card-content">
+          <h2>Writing</h2>
+          <p>Essays about science, places, ideas, and everything else</p>
+          <span class="grid-card-arrow">→</span>
+        </div>
+      </a>
 
-        <p>
-        Github: <a href="https://github.com/nico-valencia" target="_blank">nico-valencia</a>
-        </p>
-        
-        <p>
-         LinkedIn: <a href="https://www.linkedin.com/in/nicolasvvalencia" target="_blank">Nicolas Valencia</a>
-        </p>
+      <a href="/about" class="grid-card grid-card--about">
+        <div class="grid-card-image">
+          <img src="/images/research/CCD_Ps_rf.png" alt="About" />
+        </div>
+        <div class="grid-card-content">
+          <h2>About</h2>
+          <p>Background, interests, and the person behind the science</p>
+          <span class="grid-card-arrow">→</span>
+        </div>
+      </a>
+    </section>
 
-    <!-- <header class="page-header header-row">
-    <div>
-        <h1>Nicolas Valencia</h1>
-        <p class="subtitle">Student Researcher at UC Berkeley</p>
-        
-    </div>
+    <!-- Current Status -->
+    <section class="current-status">
+      <p>
+        Currently: Incoming PhD student at <strong>UC Santa Barbara</strong>, studying ocean-bottom seismology and the structure of Earth's mantle.
+      </p>
+      <p>
+        Previously: UC Berkeley (B.A. Geophysics & Astrophysics, 2025)
+      </p>
+    </section>
 
-    <img class="profile-pic" src="/images/nicolas_valencia.jpg" alt="Portrait of Nicolas Valencia">
-    </header>
-
-    <section class="content">
-        <p>
-        I am a recent graduate from UC Berkeley with a double major in geophysics and astrophysics. My research focuses on measuring
-        azimuthal anisotropy in the southwest Pacific using station-side measurements from multiple body wave phase types, integrating
-        observational and theoretical seismology. The results of this work will serve as constraints for the full-waveform tomography of
-        the southwest Pacific, which is being developed within the Global Seismology Research Group.
-        </p>
-
-        <p>
-        I am currently seeking opportunities to advance my expertise, primarily through graduate programs where I can pursue a doctorate in
-        seismology. I am particularly interested in applying my skills to better understand the interior structure of the Earth and other
-        terrestrial planets, with the goal of contributing to our knowledge of planetary structure and evolution. Specifically, I am interested
-        in studies of the lithosphere and asthenosphere, the coupling between deep Earth geodynamic processes and tectonic expression, and
-        general advancements in geophysical inversion methods.
-        </p>
-
-        <p>
-        Please feel free to explore my work on the <a href="/Research">Research</a> page or contact me via email for further inquiries.
-        </p>
-
-        <p>
-        Email: nicolasv03 (at) berkeley (dot) edu
-        </p>
-
-        <p>
-        Github: <a href="https://github.com/nico-valencia" target="_blank">nico-valencia</a>
-        </p>
-        
-        <p>
-         LinkedIn: <a href="https://www.linkedin.com/in/nicolasvvalencia" target="_blank">Nicolas Valencia</a>
-        </p>
- -->
-
-   
+    <!-- Contact -->
+    <section class="contact-bar">
+      <a href="mailto:nicolasv03@berkeley.edu">Email</a>
+      <a href="https://github.com/nico-valencia" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/nicolasvvalencia" target="_blank" rel="noopener">LinkedIn</a>
     </section>
   </main>
+
+  <script src="/js/main.js"></script>
 </body>
 </html>
