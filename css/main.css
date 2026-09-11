@@ -104,8 +104,8 @@ body {
 }
 
 .home-portrait {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid var(--border);
