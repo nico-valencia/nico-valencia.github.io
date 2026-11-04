@@ -104,8 +104,8 @@ body {
 }
 
 .home-portrait {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid var(--border);
@@ -497,8 +497,8 @@ a:focus-visible {
   }
   
   .home-portrait {
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
   }
   
   .research-topic-content {
